@@ -51,7 +51,6 @@ check_md5() {
     if [ "${md5}" != "${2}" ]
     then
         log "MD5 check failed for ${1} (wanted ${2}, got ${md5})"
-        return 1
     fi
 
     log "MD5 check succeeded for ${1}"
